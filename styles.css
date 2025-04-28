@@ -1,0 +1,138 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    color: #333;
+    line-height: 1.6;
+}
+
+header.hero {
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+header.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+header.hero h1 span {
+    color: #6C63FF;
+}
+
+header.hero p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+/* Logos de empresas */
+.empresas-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.empresas-logos img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #fafafa;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Sección UX-UI Video */
+.ux-ui-video {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Beneficios */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.benefit {
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.benefit:hover {
+    transform: translateY(-8px);
+}
+
+.benefit img {
+    width: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+/* Proceso */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.step {
+    background-color: #eef2ff;
+    border-radius: 16px;
+    padding: 30px 25px;
+    font-size: 1rem;
+    color: #444;
+    border: 1px solid #E5E7EB;
+}
+
+/* Footer */
+footer {
+    background-color: #6C63FF;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 1rem;
+}
