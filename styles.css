@@ -71,13 +71,10 @@ section h2 {
 }
 
 .empresas-logos img {
-    width: 120px;
+    width: 50px;
     height: auto;
     object-fit: contain;
-    border-radius: 12px;
-    background: #fafafa;
     padding: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 /* Sección UX-UI Video */
