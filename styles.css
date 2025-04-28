@@ -8,26 +8,27 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #FFFFFF;
-    color: #333;
-    line-height: 1.6;
+    background-color: #faf8ff;
+    color: #333f48;
+    line-height: 1.5;
 }
 
 header.hero {
-    background-color: #F5F5F5;
+    background-color: #faf8ff;
     text-align: center;
     padding: 100px 20px 60px;
 }
 
 header.hero h1 {
     font-size: 3rem;
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 20px;
+    font-weight: 400;
+    color: #333f48;
+    margin-bottom: 40px;
 }
 
 header.hero h1 span {
-    color: #6C63FF;
+    color: #333f48;
+    font-weight: 700;
 }
 
 header.hero p {
@@ -35,6 +36,10 @@ header.hero p {
     color: #666;
     max-width: 600px;
     margin: 0 auto 30px;
+}
+.small-text {
+    font-size: 0.9rem;
+    color: #999;
 }
 
 .hero-image {
@@ -49,6 +54,10 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+}
+
+.empresas {
+    background-color: #fff;
 }
 
 section h2 {
@@ -78,6 +87,11 @@ section h2 {
 }
 
 /* Sección UX-UI Video */
+.ux-ui{
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
 .ux-ui-video {
     width: 100%;
     max-width: 700px;
