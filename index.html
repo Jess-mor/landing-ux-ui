@@ -6,14 +6,32 @@
     <title>Diseño UX/UI</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const elements = document.querySelectorAll('.fade-in');
+    
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+    
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+    </script>
+    
 <body>
     <header class="hero">
         <p class="small-text">DISEÑO UX/UI</p>
-        <h1>Transforma ideas en <br><span>experiencias inolvidables</span></h1> con el diseño UX/UI
+        <h1>Transforma ideas en <br><span>experiencias inolvidables</span>con el diseño UX/UI </h1>
         <p>Conoce cómo el diseño centrado en el usuario puede mejorar la usabilidad y aumentar la satisfacción.</p>
     </header>
 
-    <section class="empresas">
+    <section class="empresas fade-in">
         <h2>Empresas que se toman la experiencia de usuario en serio</h2>
         <div class="empresas-logos">
             <img src="./images/logo1.png" alt="Logo Empresa 1">
@@ -23,7 +41,7 @@
         </div>
     </section>
 
-    <section class="ux-ui">
+    <section class="ux-ui fade-in">
         <h2>UX se encarga de cómo se siente el producto, UI de cómo se ve.</h2>
         <video controls class="ux-ui-video">
             <source src="./images/video-1.mp4" type="video/mp4">
@@ -33,7 +51,7 @@
 
     <section class="beneficios">
         <h2>Algunos de los beneficios</h2>
-        <div class="benefits-grid">
+        <div class="benefits-grid fade-in">
             <div class="benefit">
                 <img src="./images/beneficio1.png" alt="Confianza y Lealtad">
                 <p>Aumenta la confianza y genera lealtad.</p>
